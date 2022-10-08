@@ -1,0 +1,9 @@
+<mat-card>
+  <h5>{{getTitleTask()}}</h5>
+  <mat-progress-bar  mode="determinate" [value]="(employeeTask.factCompleted/employeeTask.task.max) * 100 ">
+
+  </mat-progress-bar>
+  <div style="display: flex; justify-content: end">
+        Осталось {{employeeTask.task.max - employeeTask.factCompleted}}
+  </div>
+</mat-card>
