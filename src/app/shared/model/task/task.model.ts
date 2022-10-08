@@ -10,10 +10,10 @@ interface ITask {
 
 export class Task {
   id?: number;
-  lvl_id?:number;
-  type?: string;
-  cost?: number;
-  max?: number;
+  lvl_id: number;
+  type: string;
+  cost: number;
+  max: number;
     constructor(task?: ITask) {
         this.id = task && task.id || -1;
         this.type = task && task.type || '';

@@ -8,17 +8,17 @@ import {Employee} from "../model/employee.model";
 @Injectable()
 export class HelperUtilService {
 
-  base_url = ''
+public  base_url = ''
 
   private appData: any;
 
   employee: Employee = new Employee();
 
   constructor(private http: HttpClient) {
-    this.getAppData().subscribe(a => {
-      this.appData = a;
-      this.employee = a.employee;
-    })
+    // this.getAppData().subscribe(a => {
+    //   this.appData = a;
+    //   this.employee = a.employee;
+    // })
   }
 
 

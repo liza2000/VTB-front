@@ -14,20 +14,27 @@ import { RatingComponent } from './pages/rating/rating.component';
 import { TaskComponent } from './pages/rating/task/task.component';
 import { TaskListComponent } from './pages/rating/task-list/task-list.component';
 import {MatProgressBarModule} from "@angular/material/progress-bar";
+import { HttpClientModule} from "@angular/common/http";
+import {HelperUtilService} from "./shared/services/helper-util.service";
+import { ColleguesComponent } from './pages/collegues/collegues.component';
+import { EmployeeCardComponent } from './pages/collegues/employee-card/employee-card.component';
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import {MatDialogModule} from "@angular/material/dialog";
+import { StarRatingComponent } from './pages/collegues/star-rating/star-rating.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatTooltipModule} from "@angular/material/tooltip";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 const routes: Routes = [
+  {path: 'rating', component: RatingComponent},
   {path: 'market', component: MarketComponent},
-  {path: 'employee', component: MainPageComponent},
+  {path: 'employee', component: ColleguesComponent},
   {path: '', component: MainPageComponent},
   {path: '**', component: MainPageComponent},
 
 ];
 
-
-function MainComponent() {
-
-}
 
 @NgModule({
   declarations: [
@@ -37,6 +44,9 @@ function MainComponent() {
     RatingComponent,
     TaskComponent,
     TaskListComponent,
+    ColleguesComponent,
+    EmployeeCardComponent,
+    StarRatingComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,9 +57,15 @@ function MainComponent() {
     MatButtonModule,
     RouterModule.forRoot(routes, {useHash: true}),
     MatCardModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    HttpClientModule,
+    MatProgressSpinnerModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatTooltipModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [HttpClientModule, HelperUtilService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

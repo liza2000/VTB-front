@@ -1,18 +1,7 @@
-.task-card{
+.employee-card{
   max-width: 600px;
   margin: 20px 50px;
   background-color: darkblue;
   display: flex;
   justify-content: space-between;
 }
-
-.progress-container{
-  width: 500px;
-}
-
-.cost-container{
-  margin: auto;
-}
-
-
-

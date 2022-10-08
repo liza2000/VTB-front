@@ -1,0 +1,12 @@
+<mat-card class="employee-card">
+  <h4>{{employee.name}}</h4>
+<div>
+  <span style="padding: 5px">{{average.toFixed(2)}}</span>
+  <app-star-rating
+    [rating]="4"
+    [starCount]="5"
+    (ratingUpdated)="onRatingChanged($event)">
+  </app-star-rating>
+</div>
+
+</mat-card>
