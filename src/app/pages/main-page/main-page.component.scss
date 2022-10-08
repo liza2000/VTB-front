@@ -1,0 +1,9 @@
+.main-page-content{
+  display: flex;
+  justify-content: start;
+  .mat-card{
+    margin: 50px 70px 50px 0;
+    max-width: 45%;
+    background-color: darkblue;
+  }
+}

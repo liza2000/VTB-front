@@ -1,0 +1,35 @@
+<div>
+  <div class="flex">
+    <div class="nav-div">
+      <h4>
+        <span>Мой баланс: </span>
+        <div class="balance">
+          <mat-icon class="green">monetization_on</mat-icon>
+          <span  class="is-ok"></span>
+          <span  class="red"></span>
+        </div>
+      </h4>
+      <div class="block">
+        <div class="row-fluid brick">
+          <a routerLink="/items" routerLinkActive="active">Все товары</a>
+        </div>
+        <div class="row-fluid brick">
+          <a routerLink="/orders" routerLinkActive="active">История заказов</a>
+        </div>
+        <div class="row-fluid brick">
+          <button class="puffed" mat-raised-button color="primary"
+                   routerLink="/cart"
+                  routerLinkActive="active">
+            <mat-icon>shopping_cart</mat-icon>
+            Корзина
+          </button>
+        </div>
+      </div>
+      <div  class="block">
+        <div class="row-fluid brick">
+          <a routerLink="/manage-orders" routerLinkActive="active">Менеджмент заказов</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
