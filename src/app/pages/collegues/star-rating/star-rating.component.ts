@@ -18,6 +18,9 @@ export class StarRatingComponent implements OnInit {
 
 public ratingArr:number[] = [];
 
+  @Input()
+  disabled: boolean = false;
+
   constructor(private helpers: HelperUtilService) {
   }
 
@@ -31,14 +34,6 @@ public ratingArr:number[] = [];
     if(!this.withSelect) return false;
     this.ratingUpdated.emit(rating);
     return false;
-  }
-
-  showIcon(index:number) {
-    if (this.rating >= index + 1) {
-      return 'star';
-    } else {
-      return 'star_border';
-    }
   }
 
 }

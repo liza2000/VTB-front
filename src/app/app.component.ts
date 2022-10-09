@@ -14,9 +14,12 @@ export class AppComponent implements OnInit{
   constructor(private router: Router) {
 
     this.links = [
-      {path: 'rating', label: 'Рейтинг', index: 0},
-      {path: "market", label: "Магазин", index: 1},
-      {path: "employee", label: "Коллеги", index: 2},
+      {path: "", label: "Главная", index: 0},
+      {path: "employee", label: "Коллеги", index: 1},
+      {path: "market", label: "Маркет", index: 2},
+      {path: 'rating', label: 'Рейтинг', index: 3},
+      {path: 'rating', label: 'Мероприятия', index: 4},
+      // {path: "history", label: "История начислений", index: 3},
     ]
 
   }

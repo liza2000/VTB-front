@@ -17,7 +17,6 @@ export class TaskComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.employeeTask)
 
   }
 

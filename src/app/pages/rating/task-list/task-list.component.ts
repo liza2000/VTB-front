@@ -24,7 +24,7 @@ export class TaskListComponent implements OnInit {
     }),
     new EmployeeTask({
       id:2,
-      fact: 2,
+      fact: 4,
       task:  new Task({
         lvl_id:1,
         max: 5,

@@ -1,6 +1,6 @@
 .task-card{
   max-width: 600px;
-  margin: 20px 50px;
+  margin: 20px auto;
   background-color: darkblue;
   display: flex;
   justify-content: space-between;

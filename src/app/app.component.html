@@ -1,9 +1,9 @@
 <div class="container">
 
 <div *ngIf="isLoading()" class="nav-container">
-  <nav mat-tab-nav-bar  [color]="'accent'" [backgroundColor]="'accent'" mat-align-tabs="start">
-    <a mat-tab-link [routerLink]="''" >
-      <mat-icon>home</mat-icon>
+  <nav mat-tab-nav-bar  [color]="'accent'" style="background-color: transparent" mat-align-tabs="start">
+    <a style="width: 70%; display: -moz-box;display: -webkit-box" mat-tab-link [routerLink]="''" >
+      <img src="assets/logo.png" width="100px" height="35px" style="margin: 10px 0"/>
     </a>
     <a mat-tab-link *ngFor="let link of links"
              [routerLink]="link.path" >

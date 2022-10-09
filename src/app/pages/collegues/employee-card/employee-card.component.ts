@@ -13,6 +13,9 @@ export class EmployeeCardComponent implements OnInit {
   employee: Employee = new Employee()
 
   average: number = 0
+  disabled = false;
+
+  score:number = 0;
   constructor() { }
 
   ngOnInit(): void {
@@ -30,5 +33,15 @@ export class EmployeeCardComponent implements OnInit {
     let sum = 0;
     this.employee.ratings.forEach(r=>sum+=r.score )
     this.average = sum/this.employee.ratings.length
+    this.disabled=true;
+
+    this.score = $event
+  }
+
+  getStarsByAverage() :number{
+    if (this.average>4.5) return 100;
+    if (this.average>4.3) return 70;
+    if (this.average>4) return 50;
+    return 30
   }
 }

@@ -24,6 +24,7 @@ import { StarRatingComponent } from './pages/collegues/star-rating/star-rating.c
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {ReactiveFormsModule} from "@angular/forms";
+import {MatTableModule} from "@angular/material/table";
 
 
 const routes: Routes = [
@@ -63,7 +64,8 @@ const routes: Routes = [
     MatDialogModule,
     MatFormFieldModule,
     MatTooltipModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTableModule
   ],
   providers: [HttpClientModule, HelperUtilService],
   bootstrap: [AppComponent]
